@@ -81,7 +81,7 @@ function Content() {
                 </div>
                 <div className='w-[80%] h-[69%] p-2'>
                     <div>
-                        <h2 className='text-2xl font-bold'>Your paswords</h2>
+                        <h2 className='text-2xl font-bold'>Your passwords</h2>
                     </div>
                     <div className='w-full max-h-[92%] overflow-y-auto py-3'>
                         {passwords.length === 0 && <div className='w-full h-80 flex justify-center items-center'>
