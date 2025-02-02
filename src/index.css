@@ -1,0 +1,10 @@
+@import "tailwindcss";
+/* @import "tailwindcss/utilities"; */
+/* @import "tailwindcss/components"; */
+::placeholder{
+    font-weight:700;
+    font-size: large;
+}
+::-webkit-scrollbar{
+    display: none;
+}
