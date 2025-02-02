@@ -103,7 +103,7 @@ function Content() {
                                         <td>{data.username}</td>
                                         <td>{data.password}</td>
                                         <td className='flex justify-center items-center gap-2 cursor-pointer'>
-                                            <img src="./public/image/copy.png" width="25px" height="25" alt="copy" onClick={() => handleCopy(data)} />
+                                            <img src="/image/copy.png" width="25px" height="25" alt="copy" onClick={() => handleCopy(data)} />
                                             <lord-icon
                                                 onClick={() => handleEdit(data)}
                                                 src="https://cdn.lordicon.com/fikcyfpp.json"
