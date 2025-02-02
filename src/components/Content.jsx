@@ -55,11 +55,11 @@ function Content() {
         const handleEye=()=>{
             if(type==="password"){
                 settype("text")
-                seteyeSrc("./src/assets/hide.png")
+                seteyeSrc("./public/image/hide.png")
             }
             else{
                 settype("password")
-                seteyeSrc("./src/assets/eye.png")
+                seteyeSrc("./public/image/eye.png")
             }
         }
 
@@ -103,7 +103,7 @@ function Content() {
                                         <td>{data.username}</td>
                                         <td>{data.password}</td>
                                         <td className='flex justify-center items-center gap-2 cursor-pointer'>
-                                            <img src="./src/assets/copy.png" width="25px" height="25" alt="copy" onClick={() => handleCopy(data)} />
+                                            <img src="./public/image/copy.png" width="25px" height="25" alt="copy" onClick={() => handleCopy(data)} />
                                             <lord-icon
                                                 onClick={() => handleEdit(data)}
                                                 src="https://cdn.lordicon.com/fikcyfpp.json"
