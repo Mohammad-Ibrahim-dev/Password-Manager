@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 function Content() {
     const [form, setform] = useState({ site: '', username: '', password: '' })
     const [type, settype] = useState("password")
-    const [eyeSrc, seteyeSrc] = useState("./public/image/eye.png")
+    const [eyeSrc, seteyeSrc] = useState("/image/eye.png")
     const [passwords, setpasswords] = useState(() => {
         const localData = localStorage.getItem("passwords")
         return localData ? JSON.parse(localData) : []
@@ -55,11 +55,11 @@ function Content() {
         const handleEye=()=>{
             if(type==="password"){
                 settype("text")
-                seteyeSrc("./public/image/hide.png")
+                seteyeSrc("/image/hide.png")
             }
             else{
                 settype("password")
-                seteyeSrc("./public/image/eye.png")
+                seteyeSrc("/image/eye.png")
             }
         }
 
