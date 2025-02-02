@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 function Content() {
     const [form, setform] = useState({ site: '', username: '', password: '' })
     const [type, settype] = useState("password")
-    const [eyeSrc, seteyeSrc] = useState("./src/assets/eye.png")
+    const [eyeSrc, seteyeSrc] = useState("./public/image/eye.png")
     const [passwords, setpasswords] = useState(() => {
         const localData = localStorage.getItem("passwords")
         return localData ? JSON.parse(localData) : []
