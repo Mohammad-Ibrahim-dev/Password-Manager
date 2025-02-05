@@ -66,14 +66,14 @@ function Content() {
         return (
             <div className='w-full h-[85%] bg-gray-100 flex flex-col items-center'>
                 <div>
-                    <h3 className='text-3xl p-3 italic font-bold'>keep Secure Security here...</h3>
+                    <h3 className='md:text-3xl text-2xl p-3 italic font-bold'>keep Secure Security here...</h3>
                 </div>
                 <div className='w-[80%] flex flex-col gap-3 p-2'>
                     <input className='border px-2 py-1 w-full border-green-400 rounded-3xl' placeholder='website URL...' value={form.site} onChange={handleChange} name='site' type="text" />
-                    <div className='flex gap-2'>
-                        <input className='border py-1 w-[85%] px-2 border-green-400 rounded-3xl' placeholder='Username' type="text" value={form.username} onChange={handleChange} name="username" />
+                    <div className='flex gap-2 w-full'>
+                        <input className='border py-1 min-w-1/2 md:w-[85%] px-2 border-green-400 rounded-3xl' placeholder='Username' type="text" value={form.username} onChange={handleChange} name="username" />
                         <span className='relative'>
-                        <input className='border px-2 py-1 border-green-400 rounded-3xl' placeholder='Password' type={type} value={form.password} onChange={handleChange} name="password" id="pass" />
+                        <input className='border px-2 py-1 w-full border-green-400 rounded-3xl' placeholder='Password' type={type} value={form.password} onChange={handleChange} name="password" id="pass" />
                         <img src={eyeSrc} onClick={handleEye} className='absolute top-1 right-3' />
                         </span>
                     </div>
